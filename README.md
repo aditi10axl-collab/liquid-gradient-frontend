@@ -1,2 +1,2 @@
 # liquid-gradient-frontend
-i have created my first beautiful frontend
+creating this website with my new learning
