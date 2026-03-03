@@ -1,2 +1,45 @@
 # liquid-gradient-frontend
 creating this website with my new learning
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: #111;
+}
+
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #ff6ec4, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: move 10s infinite alternate ease-in-out;
+}
+
+.blob:nth-child(2) {
+  left: 50%;
+  top: 40%;
+  background: radial-gradient(circle, #7873f5, transparent 70%);
+  animation-duration: 12s;
+}
+
+@keyframes move {
+  from {
+    transform: translate(-50px, -50px);
+  }
+  to {
+    transform: translate(50px, 50px);
+  }
+}
+</style>
+</head>
+<body>
+  <div class="blob"></div>
+  <div class="blob"></div>
+</body>
+</html>
